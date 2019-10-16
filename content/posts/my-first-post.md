@@ -6,3 +6,9 @@ summary: "This is a custom summary for my article"
 draft: true
 ---
 
+|Hex Code| Colour      |
+|--------|-------------|
+|#F9D5BB |<div style="color: #F9D5BB;">#F9D5BB</div>|
+|#D66767 |<div style="color: #D66767;">#D66767</div>|
+|#D35656 |<div style="color: #D35656;">#D35656</div>|
+|#3C3D47 |<div style="color: #3C3D47;">#3C3D47</div>|
