@@ -1,0 +1,79 @@
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <!-- <div class="footer-logo"> -->
+            {{- $out_fo  := "footer.svg" -}}
+            {{- $img_n   := .Site.Params.footer.logo -}}
+            {{- $type    := lower (substr $img_n (sub (len $img_n) 3) (len $img_n)) -}}
+            {{- $img     := resources.Get $img_n -}}
+            {{- if eq $type "svg" -}}
+              {{- $img    = $img | resources.ExecuteAsTemplate $out_fo . }}
+            {{- end -}}
+            <img src="{{- $img.Permalink | relURL -}}" alt="">
+        <!-- </div> -->
+      </div>
+      
+    <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Website</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+                <a href="{{- printf "credits" | relURL -}}">
+                  <span class="icon"><i class="fa fa-cube"></i></span>
+                  Credits
+                </a>
+              </li>
+            <li>
+              <a href="{{- printf "tags" | relURL -}} ">
+                <span class="icon"><i class="fa fa-tag"></i></span> 
+                All Tags
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Contacts</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a href="{{ .Site.Params.footer.linkedin }}" target="_blank">
+                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="mailto:{{ .Site.Params.footer.email }}" target="_blank">
+                <span class="icon"><i class="fa fa-envelope"></i></span>
+                {{ .Site.Params.footer.email }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+              <h3>Copyright</h3>
+          </div>
+          <ul class="link-list">
+            <li>
+              <a>
+                <span class="icon"><i class="fa fa-copyright"></i></span>
+                {{ .Site.Params.footer.copyright }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
