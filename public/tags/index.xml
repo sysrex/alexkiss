@@ -29,5 +29,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>CVE</title>
+      <link>https://alexkiss.dev/tags/cve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://alexkiss.dev/tags/cve/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -41,4 +41,16 @@
     <loc>https://alexkiss.dev/categories/</loc>
   </url>
   
+  <url>
+    <loc>https://alexkiss.dev/tags/cve/</loc>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/posts/vulnerabilities/</loc>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/categories/thoughts/</loc>
+  </url>
+  
 </urlset>
