@@ -13,4 +13,3 @@ List of recently reported vulnerabilties. Last update can be spotted by the date
 
 #  CVE
 
-{{< vulnerabilities url="http://localhost:8080/events" >}}
