@@ -4,6 +4,7 @@ install:
   - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
   - sudo dpkg -i /tmp/hugo.deb
 script:
+  - script: git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
   - rm -rf public 2> /dev/null
   - hugo --config config.toml
 before_deploy:
