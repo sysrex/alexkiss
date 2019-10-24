@@ -19,3 +19,10 @@ func main() {
 }
 
 {{< /highlight >}}
+
+
+{{< highlight go >}}
+
+$ go run variables.go
+variable
+{{< /highlight >}}
