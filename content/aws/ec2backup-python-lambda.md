@@ -6,6 +6,48 @@ summary: "Create ec2 backup with lambda and python functions"
 draft: false
 ---
 
+
+#Create EC2 Snapshots with AWS Lambda and Python Functions
+
+
+
+# IAM Permission Policy for the Role that will run
+
+{{< highlight json >}}
+
+{
+   "Version": "2012-10-17",
+   "Statement": [
+       {
+           "Effect": "Allow",
+           "Action": "logs:*",
+           "Resource": "*"
+       },
+       {
+           "Effect": "Allow",
+           "Action": "ec2:Describe*",
+           "Resource": "*"
+       },
+       {
+           "Effect": "Allow",
+           "Action": [
+               "ec2:CreateSnapshot",
+               "ec2:DeleteSnapshot",
+               "ec2:CreateTags",
+               "ec2:DeleteTags",
+               "ec2:ModifySnapshotAttribute"
+           ],
+           "Resource": [
+               "*"
+           ]
+       }
+   ]
+}
+
+{{< /highlight >}}
+
+# Python 3.6 script to be added to the function
+
 {{< highlight python >}}
 
 import collections
