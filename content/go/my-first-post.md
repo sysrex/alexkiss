@@ -1,14 +1,21 @@
 ---
-title: "My First Post"
+title: "Go variables"
 date: 2019-10-16T14:16:40+01:00
-tags: ["SRE", "GO"]
-summary: "This is a custom summary for my article"
+tags: ["GO"]
+summary: "Just a small overview of the go variables"
 draft: false
 ---
 
-|Hex Code| Colour      |
-|--------|-------------|
-|#F9D5BB |<div style="color: #F9D5BB;">#F9D5BB</div>|
-|#D66767 |<div style="color: #D66767;">#D66767</div>|
-|#D35656 |<div style="color: #D35656;">#D35656</div>|
-|#3C3D47 |<div style="color: #3C3D47;">#3C3D47</div>|
+In Go, variables are explicitly declared and used by the compiler to e.g. check type-correctness of function calls.
+
+{{< highlight go >}}
+
+package main
+   import "fmt" 
+
+func main() {
+  var a = "variable"
+  fmt.Println(a)
+}
+
+{{< /highlight >}}
