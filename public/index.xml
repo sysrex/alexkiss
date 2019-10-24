@@ -6,10 +6,19 @@
     <description>Recent content on Alex Kiss</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Oct 2019 12:02:32 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 14:16:40 +0100</lastBuildDate>
     
 	<atom:link href="https://alexkiss.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gopherotti avatar</title>
+      <link>https://alexkiss.dev/posts/welcome-gopherotti/</link>
+      <pubDate>Thu, 24 Oct 2019 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/welcome-gopherotti/</guid>
+      <description>PResenting my new gopherotti avatar</description>
+    </item>
     
     <item>
       <title>Setup Hugo</title>
@@ -30,24 +39,6 @@
     </item>
     
     <item>
-      <title>Gopherotti avatar</title>
-      <link>https://alexkiss.dev/posts/welcome-gopherotti/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://alexkiss.dev/posts/welcome-gopherotti/</guid>
-      <description>PResenting my new gopherotti avatar</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://alexkiss.dev/aws/my-first-post/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://alexkiss.dev/aws/my-first-post/</guid>
-      <description>This is a custom summary for my article</description>
-    </item>
-    
-    <item>
       <title>My First Post</title>
       <link>https://alexkiss.dev/posts/my-first-post/</link>
       <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
@@ -63,6 +54,15 @@
       
       <guid>https://alexkiss.dev/terraform/my-first-post/</guid>
       <description>This is a custom summary for my article</description>
+    </item>
+    
+    <item>
+      <title>EC2 backup with lambda</title>
+      <link>https://alexkiss.dev/aws/ec2backup-python-lambda/</link>
+      <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/aws/ec2backup-python-lambda/</guid>
+      <description>Create ec2 backup with lambda and python functions</description>
     </item>
     
     <item>
