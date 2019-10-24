@@ -18,12 +18,47 @@
   </url>
   
   <url>
+    <loc>https://alexkiss.dev/aws/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexkiss.dev/tags/go/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
+    <loc>https://alexkiss.dev/go/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/kubernetes/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/aws/my-first-post/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/go/my-first-post/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/kubernetes/my-first-post/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexkiss.dev/posts/my-first-post/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/terraform/my-first-post/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
@@ -34,6 +69,11 @@
   
   <url>
     <loc>https://alexkiss.dev/tags/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/terraform/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   

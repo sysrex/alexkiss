@@ -76,3 +76,19 @@ pygmentsUseClasses = true # new add
     name = "Blog"
     weight = 1
     url  = "posts"
+[[menu.main]]
+    name = "AWS"
+    weight = 2
+    url = "aws"
+[[menu.main]]
+    name = "Kubernetes"
+    weight = 3
+    url = "kubernetes"
+[[menu.main]]
+    name = "Terraform"
+    weight = 4
+    url = "terraform"
+[[menu.main]]
+    name = "Go"
+    weight = 5
+    url = "go"
