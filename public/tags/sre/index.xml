@@ -22,15 +22,6 @@
     
     <item>
       <title>My First Post</title>
-      <link>https://alexkiss.dev/go/my-first-post/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://alexkiss.dev/go/my-first-post/</guid>
-      <description>This is a custom summary for my article</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
       <link>https://alexkiss.dev/kubernetes/my-first-post/</link>
       <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
       
