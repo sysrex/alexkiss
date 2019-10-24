@@ -22,3 +22,11 @@ deploy:
   script: rsync -r --quiet --delete-after ${TRAVIS_BUILD_DIR}/public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
   on:
     branch: master
+
+env:
+  global:
+    - PRODUCTION=true
+    - HUGO_RELEASE=0.59.0
+    - secure: <a long string of random looking ASCII chars ending with an equal sign>
+    - secure: <another long ASCII string ending with an equal sign>
+    - secure: <and another long ASCII string ending with an equal sign>
