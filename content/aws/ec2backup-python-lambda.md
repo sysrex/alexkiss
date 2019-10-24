@@ -11,7 +11,19 @@ draft: false
 
 
 
-# IAM Permission Policy for the Role that will run
+### Create the IAM Role that will be used
+
+First in IAM, navigate to Services -> IAM -> Roles -> Create Role. Then select Lambda and create a policy for the role.
+
+We want our function to be able to:
+
+- Read different types of information from EC2 (so we’ll give it full describe and read permissions)
+
+- Create and Delete Snapshots
+
+- Create and Delete Tags
+
+- Write access to CloudWatch Logs
 
 {{< highlight json >}}
 
@@ -46,7 +58,19 @@ draft: false
 
 {{< /highlight >}}
 
-# Python 3.6 script to be added to the function
+### Tagging
+
+To label which EC2 Instances we want to snapshot – we will use tags.
+
+Simply select the instance which we want to automatically snapshot – then give it the tag Key: ‘auto_snapshot’ and Value: 'true' .
+
+
+### Lambda
+
+Now, navigate to the AWS Lambda Management Console. Then select Create Function > Author from Scratch. Name your function, choose Python 3.6 as the runtime, finally for roles select Choose an Existing Role (and select the role we made earlier).
+
+
+### Python 3.6 script to be added to the function
 
 {{< highlight python >}}
 
