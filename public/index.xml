@@ -30,20 +30,20 @@
     </item>
     
     <item>
+      <title>Gopherotti avatar</title>
+      <link>https://alexkiss.dev/posts/welcome-gopherotti/</link>
+      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/welcome-gopherotti/</guid>
+      <description>PResenting my new gopherotti avatar</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
       <link>https://alexkiss.dev/aws/my-first-post/</link>
       <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
       
       <guid>https://alexkiss.dev/aws/my-first-post/</guid>
-      <description>This is a custom summary for my article</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://alexkiss.dev/kubernetes/my-first-post/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://alexkiss.dev/kubernetes/my-first-post/</guid>
       <description>This is a custom summary for my article</description>
     </item>
     
@@ -63,6 +63,15 @@
       
       <guid>https://alexkiss.dev/terraform/my-first-post/</guid>
       <description>This is a custom summary for my article</description>
+    </item>
+    
+    <item>
+      <title>What is Kubernetes</title>
+      <link>https://alexkiss.dev/kubernetes/what-is-kubernetes/</link>
+      <pubDate>Tue, 16 Oct 2018 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/kubernetes/what-is-kubernetes/</guid>
+      <description>What is kubernetes</description>
     </item>
     
     <item>

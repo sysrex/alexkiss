@@ -33,22 +33,22 @@
   </url>
   
   <url>
+    <loc>https://alexkiss.dev/posts/welcome-gopherotti/</loc>
+    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://alexkiss.dev/go/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/kubernetes/</loc>
+    <loc>https://alexkiss.dev/tags/misc/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://alexkiss.dev/aws/my-first-post/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/kubernetes/my-first-post/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
@@ -75,6 +75,21 @@
   <url>
     <loc>https://alexkiss.dev/terraform/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/kubernetes/</loc>
+    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/tags/kubernetes/</loc>
+    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/kubernetes/what-is-kubernetes/</loc>
+    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
