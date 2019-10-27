@@ -1,7 +1,7 @@
 ---
 title: "EC2 backup with lambda"
 date: 2019-04-11T19:16:40+01:00
-tags: ["AWS"]
+tags: ["AWS", "Code"]
 summary: "Create ec2 backup with lambda and python functions"
 draft: false
 ---
