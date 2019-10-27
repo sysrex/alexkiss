@@ -188,3 +188,9 @@ def lambda_handler(event, context):
 
 
 {{< /highlight >}}
+
+
+
+This is just an improvement and personal notes to:
+[![Credits](http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html)](http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html)
+
