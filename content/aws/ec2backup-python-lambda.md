@@ -70,7 +70,7 @@ Simply select the instance which we want to automatically snapshot – then give
 Now, navigate to the AWS Lambda Management Console. Then select Create Function > Author from Scratch. Name your function, choose Python 3.6 as the runtime, finally for roles select Choose an Existing Role (and select the role we made earlier).
 
 
-### Python 3.6 script to be added to the function
+### Python 3.6 script to be added to the function, gist here: [(Github)](https://gist.github.com/sysrex/f07d012797c681f69410150e094c7296)
 
 {{< highlight python >}}
 
@@ -192,5 +192,5 @@ def lambda_handler(event, context):
 
 
 This is just an improvement and personal notes to:
-[![Credits](http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html)](http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html)
+[(Keyrus Blog)](http://blog.keyrus.co.uk/backup_ec2_instances_automatic_snapshots.html)
 
