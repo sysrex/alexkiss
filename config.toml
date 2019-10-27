@@ -12,7 +12,6 @@ pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences wi
 pygmentsUseClasses = true # new add
 
 #disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
-googleAnalytics = "G-FGYJ12623C"
 
 [params] # theme parameters
     author = "ALEX" # Author's name.
