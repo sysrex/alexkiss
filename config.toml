@@ -79,6 +79,6 @@ googleAnalytics = "G-FGYJ12623C"
     weight = 4
     url = "terraform"
 [[menu.main]]
-    name = "Go"
+    name = "Code"
     weight = 5
-    url = "go"
+    url = "code"
