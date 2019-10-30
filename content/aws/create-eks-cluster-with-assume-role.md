@@ -12,7 +12,7 @@ When creating an EKS Cluster you need to specify a role that is automatically gr
 
 
 
-![Trust Relationship](/images/trust_relationship.png/)
+![Trust Relationship](/images/trust_relationship.png)
 
 
 
