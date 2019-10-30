@@ -1,6 +1,6 @@
 ---
 title: "Build docker to ECR with travis"
-date: 2019-02-7T14:19:40+01:00
+date: 2019-02-07T14:19:40+01:00
 tags: ["AWS"]
 summary: "How to build docker containers and deploy them to ECR with Travis CI"
 draft: false
