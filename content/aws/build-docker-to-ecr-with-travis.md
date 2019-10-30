@@ -1,12 +1,12 @@
 ---
 title: "Build docker to ECR with travis"
-date: 2019-2-7T14:19:40+01:00
+date: 2019-02-7T14:19:40+01:00
 tags: ["AWS"]
 summary: "How to build docker containers and deploy them to ECR with Travis CI"
 draft: false
 ---
 
-## You will need an AWS IAM Policy for the Travis user that looks pretty much like this _I strongly suggest you use a different user for this_
+You will need an AWS IAM Policy for the Travis user that looks pretty much like this _I strongly suggest you use a different user for this_
 
 {{<highlight json>}}
 
