@@ -132,4 +132,4 @@ env:
 
 
 This is just an improvement with personal notes from:
-[(Blog Martinoni.net](https://blog.martignoni.net/2019/03/deploy-your-hugo-site/)
+[(Blog Martinoni.net)](https://blog.martignoni.net/2019/03/deploy-your-hugo-site/)
