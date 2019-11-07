@@ -66,19 +66,3 @@ googleAnalytics = "UA-150829109-1"
     name = "Blog"
     weight = 1
     url  = "posts"
-[[menu.main]]
-    name = "AWS"
-    weight = 2
-    url = "aws"
-[[menu.main]]
-    name = "Kubernetes"
-    weight = 3
-    url = "kubernetes"
-[[menu.main]]
-    name = "Terraform"
-    weight = 4
-    url = "terraform"
-[[menu.main]]
-    name = "Code"
-    weight = 5
-    url = "code"
