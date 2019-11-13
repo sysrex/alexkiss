@@ -1,45 +1,53 @@
 ---
 title: "Terraform with Remote S3 and Locking state"
-date: 2016-03-04T14:16:40+01:00
+date: 2019-11-04T14:16:40+01:00
 tags: ["AWS", "Terraform"]
 summary: "Terraform with AWS and remote state bucket"
 draft: true
 ---
 
-Intro
 
-When your are building infrastructure with terraform config, a state file, called terraform.tfstat, gets generated locally in the .terraform directory. This state file contains information about the infrastructure and configuration that terraform is managing. When working on a team, it is better to store this state file remotely so that more folks can access it to make changes to the infrastructure.
-
-Terragrunt first provided a great way to lock remote terraform state files in AWS with an S3 bucket and a dyanmoDB table. Then in v0.9, Terraform added this functionality as well, so in this blog I will be showing how to set up remote state management with locking using Terraform not Terragrunt.
-Whats in the state file?
+When building infrastructure with terraform config, a state file, called terraform.tfstat, gets generated locally in the .terraform directory. This state file contains information about the infrastructure and configuration that terraform is managing. When working on a team, it is better to store this state file remotely so that more folks can access it to make changes to the infrastructure.
 
 The state file contains information about what real resources exist for each object defined in the terraform config files. For example, if you have a DNS zone resource created in your terraform config, then the state file contains info about the actual resource that was created on AWS.
 
-Here is an example of creating a DNS zone with Terraform along with its state file:
+Here is an example of creating a DNS zone with Terraform:
 
-# example.tf# create a DNS zone called example.com
+
+{{< highlight terraform >}}
 resource "aws_route53_zone" "example_dns_zone" {
-  name = "example.com"
-}# terraform.tfstate# in the state file, the DNS zone ID along with its name is stored
+  name = "domain.com"
+}
+{{< /highlight >}}
+
+And this is how a state file looks like:
+
+{{< highlight terraform >}}
 "aws_route53_zone.example_dns_zone": {
     "type": "aws_route53_zone",
     "primary": {
-       "id": "Z2D3OUXZHH4NUA",
+       "id": "Z2D2ARTZHH4NUA",
        "attributes": {       
-          "name": "example.com"
+          "name": "domain.com"
         }
      }
 },
+{{< /highlight >}}
 
-Store State Remotely in S3
+
+### Store State Remotely in S3
 
 If you are working on a team, then its best to store the terraform state file remotely so that many people can access it. In order to setup terraform to store state remotely you need two things: an s3 bucket to store the state file in and an terraform s3 backend resource.
 
 You can create an s3 bucket in a terraform config like so:
 
-# example.tfprovider "aws" {
+
+{{< highlight terraform >}}
+provider "aws" {
   region = "us-west-2"
-}# terraform state file setup
+}
+{{< /highlight >}}
+
 # create an S3 bucket to store the state file in
 resource "aws_s3_bucket" "terraform-state-storage-s3" {
     bucket = "terraform-remote-state-storage-s3"

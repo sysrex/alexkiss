@@ -21,21 +21,57 @@
     </item>
     
     <item>
-      <title>Setup Hugo</title>
-      <link>https://alexkiss.dev/posts/setup-hugo/</link>
-      <pubDate>Thu, 17 Oct 2019 12:02:32 +0100</pubDate>
+      <title>Go variables</title>
+      <link>https://alexkiss.dev/posts/go-variables/</link>
+      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://alexkiss.dev/posts/setup-hugo/</guid>
-      <description> this is a placeholder </description>
+      <guid>https://alexkiss.dev/posts/go-variables/</guid>
+      <description>Just a small overview of the go variables</description>
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://alexkiss.dev/posts/my-first-post/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
+      <title>Create EKS Cluster with Role Assumption</title>
+      <link>https://alexkiss.dev/posts/create-eks-cluster-with-assume-role/</link>
+      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://alexkiss.dev/posts/my-first-post/</guid>
-      <description>This is a custom summary for my article</description>
+      <guid>https://alexkiss.dev/posts/create-eks-cluster-with-assume-role/</guid>
+      <description>How to create an EKS Cluster with role assumption</description>
+    </item>
+    
+    <item>
+      <title>Deploy Hugo with Travis on a VPS</title>
+      <link>https://alexkiss.dev/posts/deploy-hugo-travis/</link>
+      <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/deploy-hugo-travis/</guid>
+      <description>How to deploy a hugo cms with travis on a vps from Github</description>
+    </item>
+    
+    <item>
+      <title>EC2 backup with lambda</title>
+      <link>https://alexkiss.dev/posts/ec2backup-python-lambda/</link>
+      <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/ec2backup-python-lambda/</guid>
+      <description>Create ec2 backup with lambda and python functions</description>
+    </item>
+    
+    <item>
+      <title>Build docker to ECR with travis</title>
+      <link>https://alexkiss.dev/posts/build-docker-to-ecr-with-travis/</link>
+      <pubDate>Thu, 07 Feb 2019 14:19:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/build-docker-to-ecr-with-travis/</guid>
+      <description>How to build docker containers and deploy them to ECR with Travis CI</description>
+    </item>
+    
+    <item>
+      <title>Adding swap to ec2</title>
+      <link>https://alexkiss.dev/posts/add-swap-ec2/</link>
+      <pubDate>Fri, 04 Mar 2016 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/posts/add-swap-ec2/</guid>
+      <description>How to add swap to an EC2 instance</description>
     </item>
     
     <item>

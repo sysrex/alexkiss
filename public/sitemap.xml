@@ -28,73 +28,63 @@
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/posts/setup-hugo/</loc>
-    <lastmod>2019-10-17T12:02:32+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://alexkiss.dev/tags/go/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/go/go-variables/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/go/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/posts/my-first-post/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/terraform/my-first-post/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/tags/sre/</loc>
-    <lastmod>2019-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/terraform/</loc>
+    <loc>https://alexkiss.dev/posts/go-variables/</loc>
     <lastmod>2019-10-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://alexkiss.dev/tags/aws/</loc>
+    <lastmod>2019-08-02T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/posts/create-eks-cluster-with-assume-role/</loc>
+    <lastmod>2019-08-02T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/tags/eks/</loc>
+    <lastmod>2019-08-02T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/posts/deploy-hugo-travis/</loc>
+    <lastmod>2019-04-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/tags/hugo/</loc>
+    <lastmod>2019-04-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/tags/travis/</loc>
+    <lastmod>2019-04-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/tags/code/</loc>
     <lastmod>2019-04-11T19:16:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/aws/</loc>
+    <loc>https://alexkiss.dev/posts/ec2backup-python-lambda/</loc>
     <lastmod>2019-04-11T19:16:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/aws/ec2backup-python-lambda/</loc>
-    <lastmod>2019-04-11T19:16:40+01:00</lastmod>
+    <loc>https://alexkiss.dev/posts/build-docker-to-ecr-with-travis/</loc>
+    <lastmod>2019-02-07T14:19:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://alexkiss.dev/tags/kubernetes/</loc>
-    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/kubernetes/</loc>
-    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://alexkiss.dev/kubernetes/what-is-kubernetes/</loc>
-    <lastmod>2018-10-16T14:16:40+01:00</lastmod>
+    <loc>https://alexkiss.dev/posts/add-swap-ec2/</loc>
+    <lastmod>2016-03-04T14:16:40+01:00</lastmod>
   </url>
   
   <url>

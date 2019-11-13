@@ -30,29 +30,47 @@
     </item>
     
     <item>
-      <title>SRE</title>
-      <link>https://alexkiss.dev/tags/sre/</link>
-      <pubDate>Wed, 16 Oct 2019 14:16:40 +0100</pubDate>
-      
-      <guid>https://alexkiss.dev/tags/sre/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>AWS</title>
       <link>https://alexkiss.dev/tags/aws/</link>
-      <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
+      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
       
       <guid>https://alexkiss.dev/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Kubernetes</title>
-      <link>https://alexkiss.dev/tags/kubernetes/</link>
-      <pubDate>Tue, 16 Oct 2018 14:16:40 +0100</pubDate>
+      <title>EKS</title>
+      <link>https://alexkiss.dev/tags/eks/</link>
+      <pubDate>Fri, 02 Aug 2019 14:16:40 +0100</pubDate>
       
-      <guid>https://alexkiss.dev/tags/kubernetes/</guid>
+      <guid>https://alexkiss.dev/tags/eks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://alexkiss.dev/tags/hugo/</link>
+      <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travis</title>
+      <link>https://alexkiss.dev/tags/travis/</link>
+      <pubDate>Tue, 16 Apr 2019 14:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/tags/travis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://alexkiss.dev/tags/code/</link>
+      <pubDate>Thu, 11 Apr 2019 19:16:40 +0100</pubDate>
+      
+      <guid>https://alexkiss.dev/tags/code/</guid>
       <description></description>
     </item>
     
