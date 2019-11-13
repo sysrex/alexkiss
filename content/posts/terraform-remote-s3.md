@@ -3,11 +3,11 @@ title: "Terraform with Remote S3 and Locking state"
 date: 2019-11-04T14:16:40+01:00
 tags: ["AWS", "Terraform"]
 summary: "Terraform with AWS and remote state bucket"
-draft: true
+draft: false
 ---
 
-
-When building infrastructure with terraform config, a state file, called terraform.tfstat, gets generated locally in the .terraform directory. This state file contains information about the infrastructure and configuration that terraform is managing. When working on a team, it is better to store this state file remotely so that more folks can access it to make changes to the infrastructure.
+Ok .... so you .... you need to build infrastructure for your team. This is a job for terraform. Whenever you execute your plans in terraform a "state" file gets created called *terraform.tfstate*,
+this generally is created in the .terraform directory and contains information about the infrastructure and configuration that terraform is managing. It is generally accepted that when multiple people work on the same project it's better to store this state file remotely so that more members of the team can access it to make changes to the infrastructure, I would dare to add even if you use multiple computers this is a wise thing to do.
 
 The state file contains information about what real resources exist for each object defined in the terraform config files. For example, if you have a DNS zone resource created in your terraform config, then the state file contains info about the actual resource that was created on AWS.
 
@@ -48,7 +48,7 @@ provider "aws" {
 }
 {{< /highlight >}}
 
-# create an S3 bucket to store the state file in
+{{< highlight terraform >}}
 resource "aws_s3_bucket" "terraform-state-storage-s3" {
     bucket = "terraform-remote-state-storage-s3"
  
@@ -64,10 +64,12 @@ resource "aws_s3_bucket" "terraform-state-storage-s3" {
       Name = "S3 Remote Terraform State Store"
     }      
 }
+{{< /highlight >}}
 
 Then create the s3 backend resource like so:
 
-# terraform.tfterraform {
+{{< highlight terraform >}}
+terraform {
  backend “s3” {
  encrypt = true
  bucket = "terraform-remote-state-storage-s3"
@@ -75,6 +77,7 @@ Then create the s3 backend resource like so:
  key = path/to/state/file
  }
 }
+{{< /highlight >}}
 
 What is locking and why do we need it?
 
@@ -82,7 +85,7 @@ If the state file is stored remotely so that many people can access it, then you
 
 Create the dynamoDB table like this:
 
-# example.tf# create a dynamodb table for locking the state file
+{{< highlight terraform >}}
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
   name = "terraform-state-lock-dynamo"
   hash_key = "LockID"
@@ -98,10 +101,12 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
     Name = "DynamoDB Terraform State Lock Table"
   }
 }
+{{< /highlight >}}
 
 You will need to modify the Terraform S3 backend resource and add in the dynamoDB table:
 
-# terraform.tfterraform {
+{{< highlight terraform >}}
+terraform {
  backend “s3” {
  encrypt = true
  bucket = "terraform-remote-state-storage-s3"
@@ -110,15 +115,17 @@ You will need to modify the Terraform S3 backend resource and add in the dynamoD
  key = path/to/state/file
  }
 }
+{{< /highlight >}}
 
-Putting pieces together:
+Let's mix things up:
 
 Once you’ve created the S3 bucket and dynamoDB table, along with the backend S3 resource referencing those, then you can run your terraform configs like normal with terraform plan and terraform apply commands and the state file will show up in the s3 bucket. After those commands, if you inspect .terraform/terraform.tfstate, you will see that it contains the location of the state file now instead of the actual state file.
 
-`
+{{< highlight bash >}}
 cat .terraform/terraform.tfstate
-`
-{{ highlight json}}
+{{< /highlight >}}
+
+{{< highlight terraform >}}
 {
     "version": 3,
     "backend": {
@@ -132,4 +139,4 @@ cat .terraform/terraform.tfstate
         }
     }
 }
-{{ /highlight }}
+{{< /highlight >}}
