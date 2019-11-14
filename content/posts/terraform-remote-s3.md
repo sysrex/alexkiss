@@ -6,10 +6,13 @@ summary: "Terraform with AWS and remote state bucket"
 draft: false
 ---
 
-Ok .... so you .... you need to build infrastructure for your team. This is a job for terraform. Whenever you execute your plans in terraform a "state" file gets created called *terraform.tfstate*,
+  Ok .... so you .... you need to build infrastructure for your team. This is a job for terraform. Whenever you execute your plans in terraform a "state" file gets created called *terraform.tfstate*,
 this generally is created in the .terraform directory and contains information about the infrastructure and configuration that terraform is managing. It is generally accepted that when multiple people work on the same project it's better to store this state file remotely so that more members of the team can access it to make changes to the infrastructure, I would dare to add even if you use multiple computers this is a wise thing to do.
 
+
 The state file contains information about what real resources exist for each object defined in the terraform config files. For example, if you have a DNS zone resource created in your terraform config, then the state file contains info about the actual resource that was created on AWS.
+
+
 
 Here is an example of creating a DNS zone with Terraform:
 
@@ -33,6 +36,7 @@ And this is how a state file looks like:
      }
 },
 {{< /highlight >}}
+
 
 
 ### Store State Remotely in S3
@@ -65,8 +69,11 @@ resource "aws_s3_bucket" "terraform-state-storage-s3" {
     }      
 }
 {{< /highlight >}}
+<br>
 
 Then create the s3 backend resource like so:
+
+<br>
 
 {{< highlight terraform >}}
 terraform {
@@ -83,7 +90,8 @@ What is locking and why do we need it?
 
 If the state file is stored remotely so that many people can access it, then you risk multiple people attempting to make changes to the same file at the exact same time. So we need to provide a mechanism that will “lock” the state if its currently in-use by another user. We can accomplish this by creating a dynamoDB table for terraform to use.
 
-Create the dynamoDB table like this:
+Create the dynamoDB table like this:  
+<br>
 
 {{< highlight terraform >}}
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
@@ -103,7 +111,11 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
 }
 {{< /highlight >}}
 
+<br>
+
 You will need to modify the Terraform S3 backend resource and add in the dynamoDB table:
+
+<br>
 
 {{< highlight terraform >}}
 terraform {
@@ -117,13 +129,17 @@ terraform {
 }
 {{< /highlight >}}
 
+<br>
 Let's mix things up:
 
-Once you’ve created the S3 bucket and dynamoDB table, along with the backend S3 resource referencing those, then you can run your terraform configs like normal with terraform plan and terraform apply commands and the state file will show up in the s3 bucket. After those commands, if you inspect .terraform/terraform.tfstate, you will see that it contains the location of the state file now instead of the actual state file.
+Once you’ve created the S3 bucket and dynamoDB table, along with the backend S3 resource referencing those, then you can run your terraform configs like normal with terraform plan and terraform apply commands and the state file will show up in the s3 bucket. After those commands, if you inspect .terraform/terraform.tfstate, you will see that it contains the location of the state file now instead of the actual state file.  
+<br>
 
 {{< highlight bash >}}
 cat .terraform/terraform.tfstate
-{{< /highlight >}}
+{{< /highlight >}}  
+<br>
+
 
 {{< highlight terraform >}}
 {
