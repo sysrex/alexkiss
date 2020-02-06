@@ -2,7 +2,7 @@
 
 
 ## Build status
-[![Build Status](https://travis-ci.org/sysrex/alexkiss.svg?branch=master)](https://travis-ci.org/sysrex/alexkiss)
+[![Build Status](https://ci.alexkiss.dev/buildStatus/icon?job=alexkiss-website)](https://ci.alexkiss.dev/job/alexkiss-website/)
 <br />
 
 ### Upcoming 
