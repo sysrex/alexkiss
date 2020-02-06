@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('build') {
             steps{
-                sh 'hugo'
+                sh 'hugo --config config.toml'
             }
         }
         stage ('deploy') {
