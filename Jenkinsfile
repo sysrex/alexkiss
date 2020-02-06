@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('build') {
                 steps{
-                sh 'hugo -D -F -b "http://10.1.1.77"'
+                sh 'hugo -D'
                 }
         }
         stage ('deploy') {
