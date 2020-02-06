@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('build') {
                 steps{
-                sh 'hugo -D'
+                sh 'hugo build'
                 }
         }
         stage ('deploy') {
