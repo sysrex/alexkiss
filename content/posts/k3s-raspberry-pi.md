@@ -3,7 +3,7 @@ title: "K3s Raspberry pi"
 date: 2019-11-24T14:16:40+01:00
 tags: ["Kubernetes"]
 summary: "Installing Kubernetes K3s on Raspberry Pi Cluster"
-draft: true
+draft: false
 ---
 
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Alex Kiss</title>
@@ -101,7 +101,7 @@ I found this to be extremely boring.</description>
       <pubDate>Fri, 14 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://alexkiss.dev/posts/deploy-with-git/</guid>
-      <description>A Git hook allows you to execute custom scripts when an action occurs, such as when a commit or push is performed. Before I discovered git hooks, my deployment process consisted of pushing changes to my remote repository, SSH&amp;rsquo;ing into the server, navigating to the site directory, pulling the changes, and restarting the webserver. It wasn&amp;rsquo;t efficient at all and a waste of time doing that several times a day.</description>
+      <description>A Git hook allows you to execute custom scripts when an action occurs, such as when a commit or push is performed. Before I discovered git hooks, my deployment process consisted of pushing changes to my remote repository, SSH&amp;rsquo;ing into the server, navigating to the site directory, pulling the changes, and restarting the webserver. It wasn&amp;rsquo;t efficient at all and a waste of time doing that several times a day. I&amp;rsquo;ll explain how to set up a simple git hook making the deployment process a bit more effortless, but first I want to give credit to this how-to article which got me started.</description>
     </item>
     
     <item>
