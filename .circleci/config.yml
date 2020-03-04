@@ -14,8 +14,8 @@ jobs:
       # checkout the repository
       - checkout
 
-      # install git submodules for managing third-party dependencies
-      - run: git submodule sync && git submodule update --init
+      # install git submodules for the theme
+      - run: git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
 
       - run:
           name: install AWS CLI (first install pip, the Python package manager)
