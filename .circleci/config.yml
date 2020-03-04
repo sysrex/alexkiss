@@ -31,8 +31,8 @@ jobs:
       - image: viaops/hugo:latest
     steps:
       - run:
-        name: Publish docker container to Docker Hub
-        command: |
+          name: Publish docker container to Docker Hub
+          command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
             echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
             if git log -1 --pretty=%s | grep "\[release\]"; then
