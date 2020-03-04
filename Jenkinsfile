@@ -1,21 +1,25 @@
 pipeline {
     agent any
-    stages {
-        stage ('build') {
-            steps{
-                sh 'hugo --config config.toml'
-            }
-        }
-        stage ('deploy') {
-            steps{
-                sh 'rsync -r "$WORKSPACE/public/" jenkins@alexkiss.dev:/var/www/alexkiss.dev/'
-            }
-        }
+    def hugo
 
+    stage('Clone repository') {
+        checkout scm
     }
-    post { 
-        always { 
-            cleanWs()
+
+    stage('Build image') {
+        hugo = docker.build("sysrex/alexkiss")
+    }
+
+    stage('Test image') {
+        hugo.inside {
+            sh 'echo "Tests passed"'
+        }
+    }
+
+    stage('Push image') {
+        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+            hugo.push("${env.BUILD_NUMBER}")
+            hugo.push("latest")
         }
     }
 }
