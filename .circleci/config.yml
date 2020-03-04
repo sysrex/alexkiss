@@ -26,19 +26,21 @@ jobs:
       # build with Hugo
       - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
  
-      # `deploy` step: identical to a `run` step, but uses only one container:
-      # /docs/2.0/configuration-reference/#deploy 
-  deploy:
-      name: Deploy to AWS
-      command: |
-        if [ "${CIRCLE_BRANCH}" == "master" ]; then
-          echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-          if git log -1 --pretty=%s | grep "\[release\]"; then
-            echo "Starting a release"
-            docker push viaops/hugo
-          else
-            echo "Publish the latest image"
-            docker tag sysrex/alexkiss:latest sysrex/alexkiss
-            docker push sysrex/alexkiss
+  publish:
+    docker:
+      - image: viaops/hugo:latest
+    steps:
+      - run:
+        name: Publish docker container to Docker Hub
+        command: |
+          if [ "${CIRCLE_BRANCH}" == "master" ]; then
+            echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+            if git log -1 --pretty=%s | grep "\[release\]"; then
+              echo "Starting a release"
+              docker push viaops/hugo
+            else
+              echo "Publish the latest image"
+              docker tag sysrex/alexkiss:latest sysrex/alexkiss
+              docker push sysrex/alexkiss
+            fi
           fi
-        fi
