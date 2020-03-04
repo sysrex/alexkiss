@@ -12,7 +12,7 @@ jobs:
       - run: apk update && apk add git
 
       # install html proofer
-      - run: apk add --no-cache --virtual build-dependencies \
+      - run: apk add --update-cache --virtual build-dependencies \
                                           build-base \
                                           libxml2-dev \
                                           libxslt-dev \
