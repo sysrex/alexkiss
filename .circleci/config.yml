@@ -33,14 +33,14 @@ jobs:
       - run:
           name: Publish docker container to Docker Hub
           command: |
-          if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-            if git log -1 --pretty=%s | grep "\[release\]"; then
-              echo "Starting a release"
-              docker push viaops/hugo
-            else
-              echo "Publish the latest image"
-              docker tag sysrex/alexkiss:latest sysrex/alexkiss
-              docker push sysrex/alexkiss
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+              if git log -1 --pretty=%s | grep "\[release\]"; then
+                echo "Starting a release"
+                docker push viaops/hugo
+              else
+                echo "Publish the latest image"
+                docker tag sysrex/alexkiss:latest sysrex/alexkiss
+                docker push sysrex/alexkiss
+              fi
             fi
-          fi
