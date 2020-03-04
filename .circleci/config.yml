@@ -28,18 +28,17 @@ jobs:
  
       # `deploy` step: identical to a `run` step, but uses only one container:
       # /docs/2.0/configuration-reference/#deploy 
-      - deploy:
-          name: Deploy to AWS
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-            
-              echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
-              if git log -1 --pretty=%s | grep "\[release\]"; then
-                echo "Starting a release"
-                docker push viaops/hugo
-              else
-                echo "Publish the latest image"
-                docker tag sysrex/alexkiss:latest sysrex/alexkiss
-                docker push sysrex/alexkiss
-              fi
-            fi
+  deploy:
+      name: Deploy to AWS
+      command: |
+        if [ "${CIRCLE_BRANCH}" == "master" ]; then
+          echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
+          if git log -1 --pretty=%s | grep "\[release\]"; then
+            echo "Starting a release"
+            docker push viaops/hugo
+          else
+            echo "Publish the latest image"
+            docker tag sysrex/alexkiss:latest sysrex/alexkiss
+            docker push sysrex/alexkiss
+          fi
+        fi
