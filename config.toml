@@ -49,16 +49,6 @@ googleAnalytics = "UA-150829109-1"
     langseparator = "|" # Separates menus from language selectors when site is multilingual.
 
 # Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/sysrex/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 2
-    url = "https://twitter.com/sysrex/"
 
 # Menu links
 [[menu.main]]
