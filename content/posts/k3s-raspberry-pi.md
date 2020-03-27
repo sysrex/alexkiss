@@ -137,3 +137,5 @@ export KUBECONFIG=<location to config from pi>:$HOME/.kube/config
 This way you can keep you kubeconfig and switch to rpi cluster config when needed. You can also look into adding the config in the file instead of overriding it. More info here.
 
 This is a pretty decent cluster that one can use for learning purposes. With some volume mounted you can do some pretty cool stuff. I will try out some stuff in the upcoming days. Will also try to get the dashboard running.
+
+Updates to follow.
