@@ -29,7 +29,12 @@
   
   <url>
     <loc>https://alexkiss.dev/tags/aws/</loc>
-    <lastmod>2019-11-04T14:16:40+01:00</lastmod>
+    <lastmod>2019-11-16T14:16:40+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://alexkiss.dev/posts/send-logs-to-s3-fluentd/</loc>
+    <lastmod>2019-11-16T14:16:40+01:00</lastmod>
   </url>
   
   <url>
