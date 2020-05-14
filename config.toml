@@ -1,15 +1,15 @@
 baseurl = "https://alexkiss.dev" # Hostname (and path) to the root.
 title = "Alex Kiss" # Site title.
-theme = "coder-portfolio" # Set the theme.
+theme = "hugo-coder" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "b2"
+pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-pygmentsUseClasses = true
+pygmentsuseclasses = false
 
 googleAnalytics = "UA-150829109-1"
 
@@ -29,7 +29,7 @@ googleAnalytics = "UA-150829109-1"
     hideCopyright = false
 
     # Custom CSS
-    custom_css = []
+    custom_css = ["css/custom_style.css"]
     
     # Alignment of Mobile Menu items
     itemscentered = true
