@@ -2,7 +2,7 @@ FROM viaops/hugo
 COPY . /srv
 WORKDIR /srv
 RUN rm -rf themes/*
-RUN git clone https://github.com/naro143/hugo-coder-portfolio themes/coder-portfolio
+RUN git clone https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
 RUN hugo
 
 FROM nginx:alpine

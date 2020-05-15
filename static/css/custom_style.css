@@ -2,6 +2,10 @@ body {
     font-family: 'Roboto Mono', regular;
 }
 
+code {
+    font-family: 'Roboto Mono', regular;
+}
+
 p {
     font-family: 'Lato', regular;
 }
