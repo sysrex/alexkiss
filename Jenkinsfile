@@ -21,4 +21,15 @@ node {
             hugo.push("latest")
         }
     }
+
+    stage('Deploy image') {
+        script {
+             sh """ssh -tt root@alexkiss.dev << EOF 
+             docker stop alexkiss;
+             docker rm alexkiss;
+             docker run -dti -p 8080:80 --name alexkiss sysrex/alexkiss:latest;
+             exit
+             EOF"""
+        }
+    }
 }
