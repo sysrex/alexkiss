@@ -16,7 +16,7 @@ googleAnalytics = "UA-150829109-1"
 [params] # theme parameters
     author = "ALEX" # Author's name.
     info = "SITE RELIABILITY ENGINEER" # Author's job title or info.
-    description = "my website" # Site description.
+    description = "geeky blog" # Site description.
     keywords = "blog,developer,sre" # Site keywords.
     avatarurl = "images/alxrs.png" # Contain the path of the optionnal avatar in the static folder.
 
