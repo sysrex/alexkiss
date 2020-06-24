@@ -27,6 +27,7 @@ node {
              sh """ssh -tt root@alexkiss.dev << EOF 
              docker stop alexkiss;
              docker rm alexkiss;
+             docker pull sysrex/alexkiss:latest;
              docker run -dti -p 8080:80 --name alexkiss sysrex/alexkiss:latest;
              exit
              EOF"""
