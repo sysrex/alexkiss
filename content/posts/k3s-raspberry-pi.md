@@ -111,12 +111,15 @@ and you should see something like
 {{<highlight bash>}}
 NAME      STATUS   ROLES    AGE    VERSION
 
-master    Ready    master   23h    v1.16.3-k3s.2
-worker1   Ready    <none>   116m   v1.16.3-k3s.2
-worker2   Ready    <none>   111m   v1.16.3-k3s.2
-worker3   Ready    <none>   105m   v1.16.3-k3s.2
-worker4   Ready    <none>   111m   v1.16.3-k3s.2
-worker5   Ready    <none>   111m   v1.16.3-k3s.2
+master    Ready    master   84d   v1.17.2+k3s1
+worker6   Ready    <none>   84d   v1.17.2+k3s1
+worker2   Ready    <none>   84d   v1.17.2+k3s1
+worker1   Ready    <none>   84d   v1.17.2+k3s1
+worker3   Ready    <none>   84d   v1.17.2+k3s1
+worker5   Ready    <none>   84d   v1.17.2+k3s1
+worker7   Ready    <none>   84d   v1.17.2+k3s1
+worker4   Ready    <none>   84d   v1.17.2+k3s1
+
 {{</highlight>}}
 
 And with this the cluster setup is done.
