@@ -14,7 +14,7 @@ pygmentsuseclasses = false
 googleAnalytics = "UA-150829109-1"
 
 [params] # theme parameters
-    author = "ALEX" # Author's name.
+    author = "ALX" # Author's name.
     info = "SITE RELIABILITY ENGINEER" # Author's job title or info.
     description = "geeky blog" # Site description.
     keywords = "blog,developer,sre" # Site keywords.
