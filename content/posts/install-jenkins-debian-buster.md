@@ -4,7 +4,7 @@ date: 2020-06-11T09:16:40+01:00
 tags: ["AWS"]
 summary: "Install Jenkins on debian 10 buster"
 draft: false
----Bla bla bla---
+
 
 ### Update packages and then install the default jdk 
 
