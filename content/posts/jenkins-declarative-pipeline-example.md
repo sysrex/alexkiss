@@ -1,7 +1,7 @@
 ---
 title: "Jenkins declarative pipeline"
 date: 2018-01-19T09:22:40+01:00
-tags: ["AWS"]
+tags: ["Jenkins"]
 summary: "Jenkins declarative pipeline example"
 draft: false
 ---
