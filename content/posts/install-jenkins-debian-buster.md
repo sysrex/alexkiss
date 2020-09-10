@@ -21,7 +21,7 @@ sudo apt install default-jdk
 
 {{<highlight bash>}}
 
-wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+wget -qO - https://pkg.jenkins.io/debian-stable/jenkins.io.key | apt-key add -
 
 {{</highlight >}}
 

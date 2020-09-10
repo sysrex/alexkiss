@@ -1,5 +1,5 @@
 ---
-title: "Checking your internet connection by using speedtest-cli on linux debian headless"
+title: "Checking your internet connection with speedtest-cli "
 date: 2012-08-04T14:16:40+01:00
 tags: ["Linux"]
 summary: "Using speedtest-cli on linux debian headless"
