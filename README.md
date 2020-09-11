@@ -17,7 +17,7 @@
   <h3 align="center">My project setup</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome README template to jumpstart my projects!
     <br />
     <a href="https://github.com/sysrex/alexkiss"><strong>Explore the docs »</strong></a>
     <br />
